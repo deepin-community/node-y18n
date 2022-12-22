@@ -1,0 +1,5 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-y18n-$1/ \
+ https://github.com/yargs/y18n/tags .*/archive/.*/v?([\d\.]+).tar.gz

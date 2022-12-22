@@ -1,0 +1,31 @@
+Source: node-y18n
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , chai
+ , dh-sequence-nodejs
+ , mocha
+ , node-babel7
+ , node-mdn-browser-compat-data
+ , node-object-path
+ , node-tslib
+ , node-typescript
+ , node-ua-parser-js
+ , rollup
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-y18n
+Vcs-Git: https://salsa.debian.org/js-team/node-y18n.git
+Homepage: https://github.com/yargs/y18n
+Rules-Requires-Root: no
+
+Package: node-y18n
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: bare-bones internationalization library used by yargs
+ Inspired by i18n nodejs module.
+ .
+ Node.js is an event-based server-side JavaScript engine.

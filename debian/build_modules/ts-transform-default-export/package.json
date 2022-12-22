@@ -1,0 +1,51 @@
+{
+  "name": "ts-transform-default-export",
+  "version": "1.0.3",
+  "description": "export default foo → export = foo → module.exports = foo",
+  "author": "Alex Schneider <me@schneider.ax>",
+  "license": "ISC",
+  "keywords": [
+    "typescript",
+    "transformer",
+    "module.exports",
+    "exports"
+  ],
+  "repository": "https://github.com/axtgr/ts-transform-default-export",
+  "type": "commonjs",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rimraf build/**/* && tsc",
+    "lint": "eslint {src,test}/*.ts",
+    "format": "eslint --cache --fix {src,test}/*.ts && prettier --write **/*.md",
+    "test": "tap --no-coverage --no-timeout --no-ts --node-arg=--require=ts-node/register/transpile-only test/[!_]*.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "@types/tap": "^14.10.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-problems": "^4.0.0",
+    "eslint-plugin-prefer-let": "^1.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "tap": "^14.10.8",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "typescript": ">=3.0.0"
+  }
+}

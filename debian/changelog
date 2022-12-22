@@ -1,0 +1,108 @@
+node-y18n (5.0.8-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix filenamemangle
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Thu, 11 Nov 2021 07:29:52 +0100
+
+node-y18n (5.0.8-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-rimraf.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * New upstream version 5.0.8
+  * Drop patch now included in upstream
+  * Update build: tsc + rollup
+  * Add build dependencies:
+    + node-babel7
+    + node-mdn-browser-compat-data
+    + node-object-path
+    + node-tslib
+    + node-typescript
+    + node-ua-parser-js
+    + rollup
+  * Embed @wessberg/browserslist-generator, @wessberg/rollup-plugin-ts,
+    @wessberg/stringutil, @wessberg/ts-clone-node, gts,
+    ts-transform-default-export for build only
+  * Update CVE-2020-7774 test
+  * Add patch to workaround typescript update
+  * Add lintian overrides
+
+ -- Yadd <yadd@debian.org>  Wed, 15 Sep 2021 18:34:54 +0200
+
+node-y18n (4.0.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Fix autopkgtest
+  * Apply multi-arch hints (foreign)
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 16 Dec 2020 06:26:59 +0100
+
+node-y18n (4.0.0-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Use dh-sequence-nodejs
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Add test script for CVE-2020-7774
+  * Fix prototype pollution (Closes: #976390, CVE-2020-7774)
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 04 Dec 2020 15:29:40 +0100
+
+node-y18n (4.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Aug 2019 15:44:34 +0200
+
+node-y18n (4.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Praveen Arimbrathodiyil ]
+  * update description
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Move installed files to /usr/share/nodejs
+  * Add upstream/metadata
+  * New upstream version 4.0.0
+  * Update VCS fields to salsa
+  * Update debian/copyright
+  * Switch test to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 18 Jul 2019 20:48:59 +0200
+
+node-y18n (3.2.1-2) unstable; urgency=medium
+
+  * Enable tests
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 24 Nov 2016 20:27:07 +0530
+
+node-y18n (3.2.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #845234)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 21 Nov 2016 22:46:05 +0530
