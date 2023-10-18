@@ -1,3 +1,4 @@
 @babel/parser
 @babel/types
+@rollup/plugin-typescript
 @types/node

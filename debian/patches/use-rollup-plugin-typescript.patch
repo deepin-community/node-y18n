@@ -1,0 +1,14 @@
+Description: use @rollup/plugin-typescript
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1022664
+Forwarded: no
+Last-Update: 2022-10-27
+
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,4 +1,4 @@
+-import ts from '@wessberg/rollup-plugin-ts'
++import ts from '@rollup/plugin-typescript'
+ import transformDefaultExport from 'ts-transform-default-export'
+ 
+ const output = {

@@ -1,3 +1,28 @@
+node-y18n (5.0.8+~5.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Use @rollup/plugin-typescript instead of embedded
+    @wessberg/rollup-plugin-ts
+    (Closes: #1022664)
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Oct 2022 16:43:33 +0200
+
+node-y18n (5.0.8+~5.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Fix build dependencies (Closes: #1011894)
+
+ -- Yadd <yadd@debian.org>  Fri, 27 May 2022 07:47:24 +0200
+
+node-y18n (5.0.8+~5.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Embed typescript declarations and repack
+  * Fix build dependencies for rollup ≥ 2.61 (Closes: #1002266)
+
+ -- Yadd <yadd@debian.org>  Tue, 21 Dec 2021 19:10:11 +0100
+
 node-y18n (5.0.8-2) unstable; urgency=medium
 
   * Team upload

@@ -1,29 +1,33 @@
 Source: node-y18n
+Section: javascript
+Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Section: javascript
-Testsuite: autopkgtest-pkg-nodejs
-Priority: optional
-Build-Depends: debhelper-compat (= 13)
- , chai
+Build-Depends: chai
+ , debhelper-compat (= 13)
  , dh-sequence-nodejs
  , mocha
  , node-babel7
+ , node-magic-string
  , node-mdn-browser-compat-data
  , node-object-path
+ , node-rollup-pluginutils
+ , node-rollup-plugin-typescript
  , node-tslib
  , node-typescript
  , node-ua-parser-js
  , rollup
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-y18n
 Vcs-Git: https://salsa.debian.org/js-team/node-y18n.git
 Homepage: https://github.com/yargs/y18n
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-y18n
 Architecture: all
 Depends: ${misc:Depends}
+Provides: ${nodejs:Provides}
 Multi-Arch: foreign
 Description: bare-bones internationalization library used by yargs
  Inspired by i18n nodejs module.

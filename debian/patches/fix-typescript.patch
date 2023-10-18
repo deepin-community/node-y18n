@@ -3,9 +3,9 @@ Author: Yadd <yadd@debian.org>
 Forwarded: not-needed
 Last-Update: 2021-09-15
 
---- node-y18n-5.0.8.orig/lib/index.ts
-+++ node-y18n-5.0.8/lib/index.ts
-@@ -194,6 +194,7 @@ class Y18N {
+--- a/lib/index.ts
++++ b/lib/index.ts
+@@ -194,6 +194,7 @@
          err.message = 'syntax error in ' + languageFile
        }
  
