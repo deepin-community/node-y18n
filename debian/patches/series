@@ -1,1 +1,2 @@
 fix-typescript.patch
+use-rollup-plugin-typescript.patch
